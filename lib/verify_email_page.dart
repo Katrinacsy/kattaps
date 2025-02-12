@@ -79,26 +79,40 @@ class _VerifyEmailPageState extends State<VerifyEmailPage> {
       if (isVerified && mounted) {
         timer?.cancel();
 
-        // Create Firestore document
-        await FirebaseFirestore.instance
-            .collection('users')
-            .doc(tempSignIn.user?.uid)
-            .set({
-          'fullName': widget.fullName,
-          'email': widget.email,
-          'createdAt': FieldValue.serverTimestamp(),
-          'emailVerified': true,
-        });
+        // Create Firestore document with error handling
+        try {
+          await FirebaseFirestore.instance
+              .collection('users')
+              .doc(tempSignIn.user?.uid)
+              .set({
+            'fullName': widget.fullName,
+            'email': widget.email,
+            'createdAt': FieldValue.serverTimestamp(),
+            'emailVerified': true,
+          });
 
-        // Show success message and navigate to home
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-              content: Text('Email verified! Account created successfully.')),
-        );
+          // Show success message and navigate to home
+          if (mounted) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(
+                content: Text('Email verified! Account created successfully.'),
+              ),
+            );
 
-        Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => const HomePage()),
-        );
+            Navigator.of(context).pushReplacement(
+              MaterialPageRoute(builder: (context) => const HomePage()),
+            );
+          }
+        } catch (firestoreError) {
+          print('Firestore Error: $firestoreError'); // For debugging
+          if (mounted) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(
+                content: Text('Error saving user data. Please try again.'),
+              ),
+            );
+          }
+        }
       }
     } catch (e) {
       if (mounted) {
