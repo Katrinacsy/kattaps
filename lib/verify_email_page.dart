@@ -23,7 +23,9 @@ class VerifyEmailPage extends StatefulWidget {
 class _VerifyEmailPageState extends State<VerifyEmailPage> {
   bool isEmailVerified = false;
   Timer? timer;
-  bool canResendEmail = true;
+  bool canResendEmail = false;
+  int remainingCooldown = 60;
+  Timer? cooldownTimer;
 
   @override
   void initState() {
@@ -37,12 +39,30 @@ class _VerifyEmailPageState extends State<VerifyEmailPage> {
         const Duration(seconds: 3),
         (_) => checkEmailVerified(),
       );
+
+      // Start initial cooldown timer
+      startCooldownTimer();
     }
+  }
+
+  void startCooldownTimer() {
+    cooldownTimer?.cancel();
+    cooldownTimer = Timer.periodic(const Duration(seconds: 1), (Timer t) {
+      setState(() {
+        if (remainingCooldown > 0) {
+          remainingCooldown--;
+        } else {
+          canResendEmail = true;
+          t.cancel();
+        }
+      });
+    });
   }
 
   @override
   void dispose() {
     timer?.cancel();
+    cooldownTimer?.cancel();
     super.dispose();
   }
 
@@ -90,17 +110,73 @@ class _VerifyEmailPageState extends State<VerifyEmailPage> {
   }
 
   Future<void> sendVerificationEmail() async {
+    if (!canResendEmail) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+              'Please wait $remainingCooldown seconds before requesting another email.'),
+          duration: const Duration(seconds: 2),
+        ),
+      );
+      return;
+    }
+
     try {
-      final user = FirebaseAuth.instance.currentUser!;
+      final UserCredential tempSignIn = await FirebaseAuth.instance
+          .signInWithEmailAndPassword(
+              email: widget.email, password: widget.password);
+
+      final user = tempSignIn.user!;
       await user.sendEmailVerification();
 
-      setState(() => canResendEmail = false);
-      await Future.delayed(const Duration(seconds: 60));
-      if (mounted) setState(() => canResendEmail = true);
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Verification email sent! Please check your inbox.'),
+            duration: Duration(seconds: 3),
+          ),
+        );
+      }
+
+      // Reset cooldown
+      setState(() {
+        canResendEmail = false;
+        remainingCooldown = 60;
+      });
+
+      // Restart cooldown timer
+      startCooldownTimer();
+    } on FirebaseAuthException catch (e) {
+      if (mounted) {
+        String message =
+            'An error occurred while sending the verification email.';
+
+        if (e.code == 'too-many-requests') {
+          message = 'Too many attempts. Please try again in a few minutes.';
+          setState(() {
+            canResendEmail = false;
+            remainingCooldown = 300; // 5 minutes
+          });
+
+          // Restart cooldown timer with longer duration
+          startCooldownTimer();
+        }
+
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(message),
+            duration: const Duration(seconds: 3),
+          ),
+        );
+      }
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(e.toString())),
+          const SnackBar(
+            content:
+                Text('An unexpected error occurred. Please try again later.'),
+            duration: Duration(seconds: 3),
+          ),
         );
       }
     }
@@ -189,7 +265,9 @@ class _VerifyEmailPageState extends State<VerifyEmailPage> {
                     tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                   ),
                   child: Text(
-                    'Resend email',
+                    canResendEmail
+                        ? 'Resend email'
+                        : 'Wait ${remainingCooldown}s',
                     style: TextStyle(
                       fontSize: 12,
                       color: canResendEmail

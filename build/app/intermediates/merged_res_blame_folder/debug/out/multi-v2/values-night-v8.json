@@ -4,7 +4,7 @@
             "outputFile": "com.example.taps_test.app-mergeDebugResources-33:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/Users/katrinachan/Documents/GitHub/kattaps/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

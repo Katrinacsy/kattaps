@@ -1,13 +1,13 @@
 -- Merging decision tree log ---
 application
-INJECTED from /Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/main/AndroidManifest.xml:2:5-33:19
-INJECTED from /Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/debug/AndroidManifest.xml
-MERGED from [:cloud_firestore] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:cloud_firestore] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_auth] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_auth] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_core] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_core] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
+INJECTED from /Users/katrinachan/Documents/GitHub/kattaps/android/app/src/main/AndroidManifest.xml:2:5-33:19
+INJECTED from /Users/katrinachan/Documents/GitHub/kattaps/android/app/src/debug/AndroidManifest.xml
+MERGED from [:cloud_firestore] /Users/katrinachan/Documents/GitHub/kattaps/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_firestore] /Users/katrinachan/Documents/GitHub/kattaps/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_auth] /Users/katrinachan/Documents/GitHub/kattaps/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_auth] /Users/katrinachan/Documents/GitHub/kattaps/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] /Users/katrinachan/Documents/GitHub/kattaps/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] /Users/katrinachan/Documents/GitHub/kattaps/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [com.google.firebase:firebase-firestore:25.1.1] /Users/katrinachan/.gradle/caches/transforms-3/34190e89880cd5519cfa6854573e3612/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:13:5-24:19
 MERGED from [com.google.firebase:firebase-firestore:25.1.1] /Users/katrinachan/.gradle/caches/transforms-3/34190e89880cd5519cfa6854573e3612/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:13:5-24:19
 MERGED from [com.google.firebase:firebase-auth:23.1.0] /Users/katrinachan/.gradle/caches/transforms-3/aa473369c97b3dab3d8c1bdede2748ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:28:5-73:19
@@ -71,21 +71,21 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/katr
 MERGED from [com.google.android.play:core-common:2.0.3] /Users/katrinachan/.gradle/caches/transforms-3/888c505f6fffd4e79ce6a1e1ce284dcc/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:11:5-19:19
 MERGED from [com.google.android.play:core-common:2.0.3] /Users/katrinachan/.gradle/caches/transforms-3/888c505f6fffd4e79ce6a1e1ce284dcc/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:11:5-19:19
 	android:extractNativeLibs
-		INJECTED from /Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/katrinachan/Documents/GitHub/kattaps/android/app/src/debug/AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.1] /Users/katrinachan/.gradle/caches/transforms-3/238096731ae6ab2120a55c0440395036/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
 	android:name
-		INJECTED from /Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/katrinachan/Documents/GitHub/kattaps/android/app/src/main/AndroidManifest.xml
 manifest
-ADDED from /Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/main/AndroidManifest.xml:1:1-45:12
-MERGED from /Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/main/AndroidManifest.xml:1:1-45:12
-INJECTED from /Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-MERGED from [:cloud_firestore] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:firebase_auth] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:firebase_core] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:google_sign_in_android] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/google_sign_in_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+ADDED from /Users/katrinachan/Documents/GitHub/kattaps/android/app/src/main/AndroidManifest.xml:1:1-45:12
+MERGED from /Users/katrinachan/Documents/GitHub/kattaps/android/app/src/main/AndroidManifest.xml:1:1-45:12
+INJECTED from /Users/katrinachan/Documents/GitHub/kattaps/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/katrinachan/Documents/GitHub/kattaps/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/katrinachan/Documents/GitHub/kattaps/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+MERGED from [:cloud_firestore] /Users/katrinachan/Documents/GitHub/kattaps/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_auth] /Users/katrinachan/Documents/GitHub/kattaps/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_core] /Users/katrinachan/Documents/GitHub/kattaps/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:google_sign_in_android] /Users/katrinachan/Documents/GitHub/kattaps/build/google_sign_in_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-firestore:25.1.1] /Users/katrinachan/.gradle/caches/transforms-3/34190e89880cd5519cfa6854573e3612/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.firebase:firebase-auth:23.1.0] /Users/katrinachan/.gradle/caches/transforms-3/aa473369c97b3dab3d8c1bdede2748ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:17:1-75:12
 MERGED from [com.google.firebase:firebase-analytics:22.2.0] /Users/katrinachan/.gradle/caches/transforms-3/d085f2e28e859e6694494bbd104a361c/transformed/jetified-firebase-analytics-22.2.0/AndroidManifest.xml:2:1-9:12
@@ -153,29 +153,29 @@ MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] /Users/katrinachan/.gradle
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/katrinachan/.gradle/caches/transforms-3/a8248943be15c0e3980a951b30123ebd/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.play:core-common:2.0.3] /Users/katrinachan/.gradle/caches/transforms-3/888c505f6fffd4e79ce6a1e1ce284dcc/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:2:1-21:12
 	package
-		INJECTED from /Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/katrinachan/Documents/GitHub/kattaps/android/app/src/debug/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/katrinachan/Documents/GitHub/kattaps/android/app/src/debug/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/katrinachan/Documents/GitHub/kattaps/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/katrinachan/Documents/GitHub/kattaps/android/app/src/main/AndroidManifest.xml:1:11-69
 queries
-ADDED from /Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/main/AndroidManifest.xml:39:5-44:15
+ADDED from /Users/katrinachan/Documents/GitHub/kattaps/android/app/src/main/AndroidManifest.xml:39:5-44:15
 intent#action:name:android.intent.action.PROCESS_TEXT+data:mimeType:text/plain
-ADDED from /Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/main/AndroidManifest.xml:40:9-43:18
+ADDED from /Users/katrinachan/Documents/GitHub/kattaps/android/app/src/main/AndroidManifest.xml:40:9-43:18
 action#android.intent.action.PROCESS_TEXT
-ADDED from /Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/main/AndroidManifest.xml:41:13-72
+ADDED from /Users/katrinachan/Documents/GitHub/kattaps/android/app/src/main/AndroidManifest.xml:41:13-72
 	android:name
-		ADDED from /Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/main/AndroidManifest.xml:41:21-70
+		ADDED from /Users/katrinachan/Documents/GitHub/kattaps/android/app/src/main/AndroidManifest.xml:41:21-70
 data
-ADDED from /Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/main/AndroidManifest.xml:42:13-50
+ADDED from /Users/katrinachan/Documents/GitHub/kattaps/android/app/src/main/AndroidManifest.xml:42:13-50
 	android:mimeType
-		ADDED from /Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/main/AndroidManifest.xml:42:19-48
+		ADDED from /Users/katrinachan/Documents/GitHub/kattaps/android/app/src/main/AndroidManifest.xml:42:19-48
 uses-permission#android.permission.INTERNET
-ADDED from /Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/debug/AndroidManifest.xml:6:5-66
-MERGED from [:google_sign_in_android] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/google_sign_in_android/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-67
-MERGED from [:google_sign_in_android] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/google_sign_in_android/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-67
+ADDED from /Users/katrinachan/Documents/GitHub/kattaps/android/app/src/debug/AndroidManifest.xml:6:5-66
+MERGED from [:google_sign_in_android] /Users/katrinachan/Documents/GitHub/kattaps/build/google_sign_in_android/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-67
+MERGED from [:google_sign_in_android] /Users/katrinachan/Documents/GitHub/kattaps/build/google_sign_in_android/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-67
 MERGED from [com.google.firebase:firebase-firestore:25.1.1] /Users/katrinachan/.gradle/caches/transforms-3/34190e89880cd5519cfa6854573e3612/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:11:5-67
 MERGED from [com.google.firebase:firebase-firestore:25.1.1] /Users/katrinachan/.gradle/caches/transforms-3/34190e89880cd5519cfa6854573e3612/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:11:5-67
 MERGED from [com.google.firebase:firebase-auth:23.1.0] /Users/katrinachan/.gradle/caches/transforms-3/aa473369c97b3dab3d8c1bdede2748ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:25:5-67
@@ -193,19 +193,19 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:22.2.0] /User
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.2.0] /Users/katrinachan/.gradle/caches/transforms-3/05510c03127ef238bca471da51f6dd6d/transformed/jetified-play-services-measurement-sdk-api-22.2.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.2.0] /Users/katrinachan/.gradle/caches/transforms-3/05510c03127ef238bca471da51f6dd6d/transformed/jetified-play-services-measurement-sdk-api-22.2.0/AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from /Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/debug/AndroidManifest.xml:6:22-64
+		ADDED from /Users/katrinachan/Documents/GitHub/kattaps/android/app/src/debug/AndroidManifest.xml:6:22-64
 uses-sdk
-INJECTED from /Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/debug/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/debug/AndroidManifest.xml
-INJECTED from /Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/debug/AndroidManifest.xml
-MERGED from [:cloud_firestore] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:cloud_firestore] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_auth] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_auth] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:google_sign_in_android] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/google_sign_in_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:google_sign_in_android] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/google_sign_in_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+INJECTED from /Users/katrinachan/Documents/GitHub/kattaps/android/app/src/debug/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/katrinachan/Documents/GitHub/kattaps/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/katrinachan/Documents/GitHub/kattaps/android/app/src/debug/AndroidManifest.xml
+MERGED from [:cloud_firestore] /Users/katrinachan/Documents/GitHub/kattaps/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /Users/katrinachan/Documents/GitHub/kattaps/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] /Users/katrinachan/Documents/GitHub/kattaps/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] /Users/katrinachan/Documents/GitHub/kattaps/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /Users/katrinachan/Documents/GitHub/kattaps/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /Users/katrinachan/Documents/GitHub/kattaps/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:google_sign_in_android] /Users/katrinachan/Documents/GitHub/kattaps/build/google_sign_in_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:google_sign_in_android] /Users/katrinachan/Documents/GitHub/kattaps/build/google_sign_in_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-firestore:25.1.1] /Users/katrinachan/.gradle/caches/transforms-3/34190e89880cd5519cfa6854573e3612/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:6:5-44
 MERGED from [com.google.firebase:firebase-firestore:25.1.1] /Users/katrinachan/.gradle/caches/transforms-3/34190e89880cd5519cfa6854573e3612/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:6:5-44
 MERGED from [com.google.firebase:firebase-auth:23.1.0] /Users/katrinachan/.gradle/caches/transforms-3/aa473369c97b3dab3d8c1bdede2748ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:21:5-23:151
@@ -341,15 +341,15 @@ MERGED from [com.google.android.play:core-common:2.0.3] /Users/katrinachan/.grad
 	tools:overrideLibrary
 		ADDED from [com.google.firebase:firebase-auth:23.1.0] /Users/katrinachan/.gradle/caches/transforms-3/aa473369c97b3dab3d8c1bdede2748ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:23:9-148
 	android:targetSdkVersion
-		INJECTED from /Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/katrinachan/Documents/GitHub/kattaps/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/katrinachan/Documents/GitHub/kattaps/android/app/src/debug/AndroidManifest.xml
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [:cloud_firestore] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_auth] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_auth] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_core] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_core] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
+ADDED from [:cloud_firestore] /Users/katrinachan/Documents/GitHub/kattaps/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_auth] /Users/katrinachan/Documents/GitHub/kattaps/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_auth] /Users/katrinachan/Documents/GitHub/kattaps/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] /Users/katrinachan/Documents/GitHub/kattaps/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] /Users/katrinachan/Documents/GitHub/kattaps/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
 MERGED from [com.google.firebase:firebase-firestore:25.1.1] /Users/katrinachan/.gradle/caches/transforms-3/34190e89880cd5519cfa6854573e3612/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:14:9-23:19
 MERGED from [com.google.firebase:firebase-firestore:25.1.1] /Users/katrinachan/.gradle/caches/transforms-3/34190e89880cd5519cfa6854573e3612/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:14:9-23:19
 MERGED from [com.google.firebase:firebase-auth:23.1.0] /Users/katrinachan/.gradle/caches/transforms-3/aa473369c97b3dab3d8c1bdede2748ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:66:9-72:19
@@ -369,25 +369,25 @@ MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/katrinachan/.gra
 	android:directBootAware
 		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/katrinachan/.gradle/caches/transforms-3/30ccac24e8e5c7f05b883010da959639/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:32:13-43
 	android:name
-		ADDED from [:cloud_firestore] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:8:18-89
+		ADDED from [:cloud_firestore] /Users/katrinachan/Documents/GitHub/kattaps/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:8:18-89
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar
-ADDED from [:cloud_firestore] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:cloud_firestore] /Users/katrinachan/Documents/GitHub/kattaps/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:cloud_firestore] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:cloud_firestore] /Users/katrinachan/Documents/GitHub/kattaps/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:cloud_firestore] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-134
+		ADDED from [:cloud_firestore] /Users/katrinachan/Documents/GitHub/kattaps/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-134
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar
-ADDED from [:firebase_auth] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_auth] /Users/katrinachan/Documents/GitHub/kattaps/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_auth] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_auth] /Users/katrinachan/Documents/GitHub/kattaps/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_auth] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-124
+		ADDED from [:firebase_auth] /Users/katrinachan/Documents/GitHub/kattaps/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-124
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar
-ADDED from [:firebase_core] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_core] /Users/katrinachan/Documents/GitHub/kattaps/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_core] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_core] /Users/katrinachan/Documents/GitHub/kattaps/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_core] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-124
+		ADDED from [:firebase_core] /Users/katrinachan/Documents/GitHub/kattaps/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-124
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-firestore:25.1.1] /Users/katrinachan/.gradle/caches/transforms-3/34190e89880cd5519cfa6854573e3612/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:10:5-79
 MERGED from [com.google.firebase:firebase-auth:23.1.0] /Users/katrinachan/.gradle/caches/transforms-3/aa473369c97b3dab3d8c1bdede2748ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:26:5-79

@@ -31,8 +31,37 @@ class _SignUpPageState extends State<SignUpPage> {
     super.dispose();
   }
 
+  // Add this validation method
+  String? _validatePassword(String password) {
+    if (password.length < 12) {
+      return 'Password must be at least 12 characters long';
+    }
+    if (!RegExp(r'(?=.*[A-Z])').hasMatch(password)) {
+      return 'Password must contain at least one uppercase letter';
+    }
+    if (!RegExp(r'(?=.*[a-z])').hasMatch(password)) {
+      return 'Password must contain at least one lowercase letter';
+    }
+    if (!RegExp(r'(?=.*[0-9])').hasMatch(password)) {
+      return 'Password must contain at least one number';
+    }
+    if (!RegExp(r'(?=.*[!@#\$%^&*(),.?":{}|<>])').hasMatch(password)) {
+      return 'Password must contain at least one special character';
+    }
+    return null;
+  }
+
   // Update sign up method
   Future<void> _signUp() async {
+    // First validate password
+    String? passwordValidation = _validatePassword(_passwordController.text);
+    if (passwordValidation != null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(passwordValidation)),
+      );
+      return;
+    }
+
     if (_passwordController.text != _confirmPasswordController.text) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Passwords do not match!')),
@@ -135,7 +164,7 @@ class _SignUpPageState extends State<SignUpPage> {
             // Password Field
             _buildFieldWithLabel(
               label: 'Password',
-              hintText: '********',
+              hintText: '************',
               obscureText: !_isPasswordVisible,
               controller: _passwordController,
               suffixIcon: IconButton(
@@ -153,7 +182,7 @@ class _SignUpPageState extends State<SignUpPage> {
             // Confirm Password Field
             _buildFieldWithLabel(
               label: 'Confirm Password',
-              hintText: '********',
+              hintText: '************',
               obscureText: !_isConfirmPasswordVisible,
               controller: _confirmPasswordController,
               suffixIcon: IconButton(
@@ -265,11 +294,11 @@ class _SignUpPageState extends State<SignUpPage> {
         ),
         const SizedBox(height: 6.0),
         SizedBox(
-          width: 330.0, // Adjust the width of the field
+          width: 330.0,
           child: TextField(
             controller: controller,
             obscureText: obscureText,
-            cursorColor: const Color(0xFFFE6F5E), // Set caret color
+            cursorColor: const Color(0xFFFE6F5E),
             decoration: InputDecoration(
               hintText: hintText,
               hintStyle: const TextStyle(
@@ -277,8 +306,8 @@ class _SignUpPageState extends State<SignUpPage> {
                 fontSize: 13,
                 color: Color.fromARGB(255, 115, 114, 114),
               ),
-              fillColor: Colors.grey.shade200, // Light gray fill
-              filled: true, // Enable the fill color
+              fillColor: Colors.grey.shade200,
+              filled: true,
               contentPadding: const EdgeInsets.symmetric(
                 vertical: 10.0,
                 horizontal: 12.0,
@@ -288,13 +317,11 @@ class _SignUpPageState extends State<SignUpPage> {
               ),
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(17.0),
-                borderSide: BorderSide(
-                    color: Colors.grey.shade200, width: 2.0), // Same as fill
+                borderSide: BorderSide(color: Colors.grey.shade200, width: 2.0),
               ),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(17.0),
-                borderSide: BorderSide(
-                    color: Colors.grey.shade200, width: 1.5), // Same as fill
+                borderSide: BorderSide(color: Colors.grey.shade200, width: 1.5),
               ),
               suffixIcon: suffixIcon,
             ),

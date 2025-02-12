@@ -72,23 +72,6 @@
                     }
                 },
                 {
-                    "source": "/Users/katrinachan/Documents/TAPS TEST/taps_test/build/app/generated/res/processDebugGoogleServices/values/values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,281,385,494,614,721",
-                        "endColumns": "143,81,103,108,119,106,75",
-                        "endOffsets": "194,276,380,489,609,716,792"
-                    },
-                    "to": {
-                        "startLines": "190,194,195,196,197,198,199",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "11571,11930,12012,12116,12225,12345,12452",
-                        "endColumns": "143,81,103,108,119,106,75",
-                        "endOffsets": "11710,12007,12111,12220,12340,12447,12523"
-                    }
-                },
-                {
                     "source": "/Users/katrinachan/.gradle/caches/transforms-3/dbc5f926f94751977d6263e7909a1080/transformed/jetified-savedstate-1.2.1/res/values/values.xml",
                     "from": {
                         "startLines": "2",
@@ -103,6 +86,23 @@
                         "startOffsets": "8104",
                         "endColumns": "53",
                         "endOffsets": "8153"
+                    }
+                },
+                {
+                    "source": "/Users/katrinachan/Documents/GitHub/kattaps/build/app/generated/res/processDebugGoogleServices/values/values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,281,385,494,614,721",
+                        "endColumns": "143,81,103,108,119,106,75",
+                        "endOffsets": "194,276,380,489,609,716,792"
+                    },
+                    "to": {
+                        "startLines": "190,194,195,196,197,198,199",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "11571,11930,12012,12116,12225,12345,12452",
+                        "endColumns": "143,81,103,108,119,106,75",
+                        "endOffsets": "11710,12007,12111,12220,12340,12447,12523"
                     }
                 },
                 {
@@ -139,25 +139,6 @@
                         "startOffsets": "8158",
                         "endColumns": "49",
                         "endOffsets": "8203"
-                    }
-                },
-                {
-                    "source": "/Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "173,818",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "476,982"
-                    },
-                    "to": {
-                        "startLines": "201,205",
-                        "startColumns": "4,4",
-                        "startOffsets": "12599,12780",
-                        "endLines": "204,207",
-                        "endColumns": "12,12",
-                        "endOffsets": "12775,12944"
                     }
                 },
                 {
@@ -213,6 +194,25 @@
                         "endLines": "230",
                         "endColumns": "8",
                         "endOffsets": "14335"
+                    }
+                },
+                {
+                    "source": "/Users/katrinachan/Documents/GitHub/kattaps/android/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "173,818",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "476,982"
+                    },
+                    "to": {
+                        "startLines": "201,205",
+                        "startColumns": "4,4",
+                        "startOffsets": "12599,12780",
+                        "endLines": "204,207",
+                        "endColumns": "12,12",
+                        "endOffsets": "12775,12944"
                     }
                 },
                 {

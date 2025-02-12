@@ -13,8 +13,8 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->/Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/debug/AndroidManifest.xml:6:5-66
-15-->/Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/debug/AndroidManifest.xml:6:22-64
+15-->/Users/katrinachan/Documents/GitHub/kattaps/android/app/src/debug/AndroidManifest.xml:6:5-66
+15-->/Users/katrinachan/Documents/GitHub/kattaps/android/app/src/debug/AndroidManifest.xml:6:22-64
 16    <!--
 17     Required to query activities that can process text, see:
 18         https://developer.android.com/training/package-visibility and
@@ -23,16 +23,16 @@
 21         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
 22    -->
 23    <queries>
-23-->/Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/main/AndroidManifest.xml:39:5-44:15
+23-->/Users/katrinachan/Documents/GitHub/kattaps/android/app/src/main/AndroidManifest.xml:39:5-44:15
 24        <intent>
-24-->/Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/main/AndroidManifest.xml:40:9-43:18
+24-->/Users/katrinachan/Documents/GitHub/kattaps/android/app/src/main/AndroidManifest.xml:40:9-43:18
 25            <action android:name="android.intent.action.PROCESS_TEXT" />
-25-->/Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/main/AndroidManifest.xml:41:13-72
-25-->/Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/main/AndroidManifest.xml:41:21-70
+25-->/Users/katrinachan/Documents/GitHub/kattaps/android/app/src/main/AndroidManifest.xml:41:13-72
+25-->/Users/katrinachan/Documents/GitHub/kattaps/android/app/src/main/AndroidManifest.xml:41:21-70
 26
 27            <data android:mimeType="text/plain" />
-27-->/Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/main/AndroidManifest.xml:42:13-50
-27-->/Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/main/AndroidManifest.xml:42:19-48
+27-->/Users/katrinachan/Documents/GitHub/kattaps/android/app/src/main/AndroidManifest.xml:42:13-50
+27-->/Users/katrinachan/Documents/GitHub/kattaps/android/app/src/main/AndroidManifest.xml:42:19-48
 28        </intent>
 29    </queries> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
 30    <!-- <uses-sdk android:minSdkVersion="21" /> -->
@@ -112,31 +112,31 @@
 84            android:value="2" />
 85
 86        <service
-86-->[:cloud_firestore] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
+86-->[:cloud_firestore] /Users/katrinachan/Documents/GitHub/kattaps/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
 87            android:name="com.google.firebase.components.ComponentDiscoveryService"
-87-->[:cloud_firestore] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:8:18-89
+87-->[:cloud_firestore] /Users/katrinachan/Documents/GitHub/kattaps/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:8:18-89
 88            android:directBootAware="true"
 88-->[com.google.firebase:firebase-common:21.0.0] /Users/katrinachan/.gradle/caches/transforms-3/30ccac24e8e5c7f05b883010da959639/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:32:13-43
 89            android:exported="false" >
 89-->[com.google.firebase:firebase-firestore:25.1.1] /Users/katrinachan/.gradle/caches/transforms-3/34190e89880cd5519cfa6854573e3612/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:16:13-37
 90            <meta-data
-90-->[:cloud_firestore] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
+90-->[:cloud_firestore] /Users/katrinachan/Documents/GitHub/kattaps/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
 91                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-91-->[:cloud_firestore] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-134
+91-->[:cloud_firestore] /Users/katrinachan/Documents/GitHub/kattaps/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-134
 92                android:value="com.google.firebase.components.ComponentRegistrar" />
-92-->[:cloud_firestore] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
+92-->[:cloud_firestore] /Users/katrinachan/Documents/GitHub/kattaps/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
 93            <meta-data
-93-->[:firebase_auth] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
+93-->[:firebase_auth] /Users/katrinachan/Documents/GitHub/kattaps/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
 94                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-94-->[:firebase_auth] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-124
+94-->[:firebase_auth] /Users/katrinachan/Documents/GitHub/kattaps/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-124
 95                android:value="com.google.firebase.components.ComponentRegistrar" />
-95-->[:firebase_auth] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
+95-->[:firebase_auth] /Users/katrinachan/Documents/GitHub/kattaps/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
 96            <meta-data
-96-->[:firebase_core] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
+96-->[:firebase_core] /Users/katrinachan/Documents/GitHub/kattaps/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
 97                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-97-->[:firebase_core] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-124
+97-->[:firebase_core] /Users/katrinachan/Documents/GitHub/kattaps/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-124
 98                android:value="com.google.firebase.components.ComponentRegistrar" />
-98-->[:firebase_core] /Users/katrinachan/Documents/TAPS TEST/taps_test/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
+98-->[:firebase_core] /Users/katrinachan/Documents/GitHub/kattaps/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
 99            <meta-data
 99-->[com.google.firebase:firebase-firestore:25.1.1] /Users/katrinachan/.gradle/caches/transforms-3/34190e89880cd5519cfa6854573e3612/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:17:13-19:85
 100                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
@@ -213,7 +213,7 @@
 135-->[com.google.firebase:firebase-auth:23.1.0] /Users/katrinachan/.gradle/caches/transforms-3/aa473369c97b3dab3d8c1bdede2748ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:39:27-75
 136
 137                <data
-137-->/Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/main/AndroidManifest.xml:42:13-50
+137-->/Users/katrinachan/Documents/GitHub/kattaps/android/app/src/main/AndroidManifest.xml:42:13-50
 138                    android:host="firebase.auth"
 139                    android:path="/"
 140                    android:scheme="genericidp" />
@@ -245,7 +245,7 @@
 153-->[com.google.firebase:firebase-auth:23.1.0] /Users/katrinachan/.gradle/caches/transforms-3/aa473369c97b3dab3d8c1bdede2748ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:39:27-75
 154
 155                <data
-155-->/Users/katrinachan/Documents/TAPS TEST/taps_test/android/app/src/main/AndroidManifest.xml:42:13-50
+155-->/Users/katrinachan/Documents/GitHub/kattaps/android/app/src/main/AndroidManifest.xml:42:13-50
 156                    android:host="firebase.auth"
 157                    android:path="/"
 158                    android:scheme="recaptcha" />
