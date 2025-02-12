@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "252987527453",
+    "project_id": "taps-test-79610",
+    "storage_bucket": "taps-test-79610.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252987527453:android:0a819b5793d1834c3ad1f4",
+        "android_client_info": {
+          "package_name": "com.example.taps_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252987527453-kqlgf0lj0jkrdd2kbqhdfa33cf5ch0v0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH3B6HmNmK4ZTxfnCubtx_-VdoP8X1Yng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "252987527453-kqlgf0lj0jkrdd2kbqhdfa33cf5ch0v0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "252987527453-qrtgucou8d66h7jg6m86vs91mkn1kh23.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.tapsTest"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

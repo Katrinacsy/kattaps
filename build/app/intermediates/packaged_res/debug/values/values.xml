@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">252987527453-kqlgf0lj0jkrdd2kbqhdfa33cf5ch0v0.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">252987527453</string>
+    <string name="google_api_key" translatable="false">AIzaSyBH3B6HmNmK4ZTxfnCubtx_-VdoP8X1Yng</string>
+    <string name="google_app_id" translatable="false">1:252987527453:android:0a819b5793d1834c3ad1f4</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBH3B6HmNmK4ZTxfnCubtx_-VdoP8X1Yng</string>
+    <string name="google_storage_bucket" translatable="false">taps-test-79610.firebasestorage.app</string>
+    <string name="project_id" translatable="false">taps-test-79610</string>
+    <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
+    <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">?android:colorBackground</item>
+    </style>
+</resources>
