@@ -172,7 +172,7 @@ class _VerifyEmailPageState extends State<VerifyEmailPage> {
             remainingCooldown = 300; // 5 minutes
           });
 
-          // Restart cooldown timer with longer duration
+          // Restart cooldown timer 
           startCooldownTimer();
         }
 
