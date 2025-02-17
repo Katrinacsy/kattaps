@@ -1,6 +1,6 @@
 // ignore: unused_import
 import 'package:flutter/material.dart';
-import 'verify_email_page.dart'; // Import the Verify Email Page
+import 'verify_email_page.dart'; 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
@@ -53,7 +53,7 @@ class _SignUpPageState extends State<SignUpPage> {
 
   // Update sign up method
   Future<void> _signUp() async {
-    // First validate password
+    // Validate password
     String? passwordValidation = _validatePassword(_passwordController.text);
     if (passwordValidation != null) {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -87,8 +87,8 @@ class _SignUpPageState extends State<SignUpPage> {
           MaterialPageRoute(
             builder: (context) => VerifyEmailPage(
               email: _emailController.text.trim(),
-              password: _passwordController.text, // Pass password temporarily
-              fullName: _fullNameController.text, // Pass full name temporarily
+              password: _passwordController.text, 
+              fullName: _fullNameController.text, 
             ),
           ),
         );
@@ -200,12 +200,12 @@ class _SignUpPageState extends State<SignUpPage> {
             ),
             const SizedBox(height: 20.0),
             SizedBox(
-              width: 330.0, // Match button width to field width
+              width: 330.0, 
               child: ElevatedButton(
                 onPressed: _signUp,
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xFFFE6F5E),
-                  minimumSize: const Size(330.0, 42), // Smaller button size
+                  minimumSize: const Size(330.0, 42), 
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(17.0),
                   ),
@@ -220,7 +220,7 @@ class _SignUpPageState extends State<SignUpPage> {
             const Text(
               'Or',
               style:
-                  TextStyle(fontSize: 12.0, color: Colors.grey), // Smaller text
+                  TextStyle(fontSize: 12.0, color: Colors.grey), 
             ),
             const SizedBox(height: 12.0),
             // Social Icons
@@ -251,15 +251,15 @@ class _SignUpPageState extends State<SignUpPage> {
                     Navigator.pop(context); // Navigate back to Login page
                   },
                   style: TextButton.styleFrom(
-                    padding: EdgeInsets.zero, // Remove default padding
-                    minimumSize: Size.zero, // Remove minimum size constraints
+                    padding: EdgeInsets.zero, 
+                    minimumSize: Size.zero, 
                     tapTargetSize:
-                        MaterialTapTargetSize.shrinkWrap, // Shrink the tap area
+                        MaterialTapTargetSize.shrinkWrap, 
                   ),
                   child: const Text(
                     ' Log in.',
                     style: TextStyle(
-                      fontSize: 12.0, // Smaller font size
+                      fontSize: 12.0, 
                       color: Color(0xFFFE6F5E),
                       fontWeight: FontWeight.bold,
                     ),
