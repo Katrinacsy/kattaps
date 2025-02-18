@@ -48,9 +48,20 @@ class _WelcomePageState extends State<WelcomePage> {
   }
 
   Future<void> _signIn() async {
+    // First validate email format
+    String email = _emailController.text.trim();
+    if (!_isValidEmail(email)) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Please enter a valid email address'),
+        ),
+      );
+      return;
+    }
+
     try {
       await FirebaseAuth.instance.signInWithEmailAndPassword(
-        email: _emailController.text.trim(),
+        email: email,
         password: _passwordController.text,
       );
 
@@ -58,31 +69,43 @@ class _WelcomePageState extends State<WelcomePage> {
         Navigator.pushReplacementNamed(context, '/home');
       }
     } on FirebaseAuthException catch (e) {
-      String message;
+      print('Firebase Auth Error Code: ${e.code}');
+      print('Firebase Auth Error Message: ${e.message}');
 
+      String message;
       switch (e.code) {
         case 'user-not-found':
-          message = 'No user found for that email.';
+        case 'invalid-email':
+        case 'INVALID_LOGIN_CREDENTIALS':
+        case 'channel-error':
+          message =
+              'No account found with this email. Please check your email or sign up.';
           break;
         case 'wrong-password':
-          message = 'Incorrect password entered.';
-          break;
-        case 'invalid-email':
-          message = 'Please enter a valid email address.';
+        case 'invalid-credential':
+          message =
+              'Incorrect password. Please try again or use "Forgot Password".';
           break;
         case 'user-disabled':
           message = 'This account has been disabled.';
           break;
         default:
-          message = 'An error occurred. Please try again.';
+          message = 'An error occurred. Please try again. (${e.code})';
       }
 
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(message)),
+          SnackBar(
+            content: Text(message),
+          ),
         );
       }
     }
+  }
+
+  // Add email validation helper method
+  bool _isValidEmail(String email) {
+    return RegExp(r'^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z]+').hasMatch(email);
   }
 
   Future<void> _resetPassword() async {
