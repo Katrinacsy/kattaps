@@ -150,7 +150,7 @@ class _WelcomePageState extends State<WelcomePage> {
         idToken: gAuth.idToken,
       );
 
-      // Finally, sign in
+      // sign in
       await FirebaseAuth.instance.signInWithCredential(credential);
 
       if (mounted) {
@@ -174,11 +174,11 @@ class _WelcomePageState extends State<WelcomePage> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const SizedBox(height: 90.0), // Add space at the top
+            const SizedBox(height: 90.0), 
             const Text(
               'Welcome!',
               style: TextStyle(
-                fontSize: 35, // Font size for the title
+                fontSize: 35, 
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -186,41 +186,41 @@ class _WelcomePageState extends State<WelcomePage> {
             const Text(
               'Sign in or create a new account',
               style: TextStyle(
-                fontSize: 13, // Font size for subtitle
+                fontSize: 13, 
                 color: Colors.black,
               ),
             ),
             const SizedBox(height: 10.0),
             Image.asset(
               'assets/images/image.png',
-              height: 250, // Larger image size
+              height: 250, 
               width: 250,
             ),
             const SizedBox(height: 15.0),
             // Email TextField
             SizedBox(
-              width: 330.0, // Adjust field width
+              width: 330.0, 
               child: TextField(
                 cursorColor: const Color(0xFFFE6F5E), // Caret color
                 decoration: InputDecoration(
                   labelText: 'Email',
                   labelStyle: const TextStyle(
-                    fontSize: 13.0, // Smaller label font size
+                    fontSize: 13.0, 
                     color: Colors.grey,
                   ),
                   floatingLabelStyle: const TextStyle(
-                    fontSize: 13.0, // Smaller floating label font size
+                    fontSize: 13.0, 
                     color: Color(0xFFFE6F5E),
                     fontWeight: FontWeight.bold,
                   ),
                   hintText: 'yourname@gmail.com',
                   hintStyle: const TextStyle(
-                    fontSize: 12.0, // Smaller hint font size
+                    fontSize: 12.0, 
                     color: Colors.grey,
                   ),
                   border: OutlineInputBorder(
                     borderRadius:
-                        BorderRadius.circular(17.0), // Adjusted border
+                        BorderRadius.circular(17.0), 
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(17.0),
@@ -241,29 +241,29 @@ class _WelcomePageState extends State<WelcomePage> {
             const SizedBox(height: 15.0),
             // Password TextField
             SizedBox(
-              width: 330.0, // Adjust field width
+              width: 330.0, 
               child: TextField(
                 obscureText: !_isPasswordVisible,
                 cursorColor: const Color(0xFFFE6F5E), // Caret color
                 decoration: InputDecoration(
                   labelText: 'Password',
                   labelStyle: const TextStyle(
-                    fontSize: 13.0, // Smaller label font size
+                    fontSize: 13.0, 
                     color: Colors.grey,
                   ),
                   floatingLabelStyle: const TextStyle(
-                    fontSize: 13.0, // Smaller floating label font size
+                    fontSize: 13.0, 
                     color: Color(0xFFFE6F5E),
                     fontWeight: FontWeight.bold,
                   ),
                   hintText: '********',
                   hintStyle: const TextStyle(
-                    fontSize: 12.0, // Smaller hint font size
+                    fontSize: 12.0, 
                     color: Colors.grey,
                   ),
                   border: OutlineInputBorder(
                     borderRadius:
-                        BorderRadius.circular(17.0), // Adjusted border
+                        BorderRadius.circular(17.0), 
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(17.0),
@@ -318,16 +318,16 @@ class _WelcomePageState extends State<WelcomePage> {
             ),
             const SizedBox(height: 25.0),
             SizedBox(
-              width: 330.0, // Adjust button width to match fields
+              width: 330.0, 
               child: ElevatedButton(
                 onPressed: _signIn,
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xFFFE6F5E),
                   minimumSize:
-                      const Size(330.0, 42), // Button size matches fields
+                      const Size(330.0, 42), 
                   shape: RoundedRectangleBorder(
                     borderRadius:
-                        BorderRadius.circular(17.0), // Adjusted border
+                        BorderRadius.circular(17.0), 
                   ),
                 ),
                 child: const Text(
@@ -340,17 +340,17 @@ class _WelcomePageState extends State<WelcomePage> {
             const Text(
               'Or',
               style:
-                  TextStyle(fontSize: 12.0, color: Colors.grey), // Smaller text
+                  TextStyle(fontSize: 12.0, color: Colors.grey), 
             ),
             const SizedBox(height: 12.0),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 _buildSocialIcon('assets/images/apple_icon.png'),
-                const SizedBox(width: 20.0), // Reduced spacing
+                const SizedBox(width: 20.0), 
                 _buildSocialIcon('assets/images/google_icon.png',
                     onTap: _signInWithGoogle),
-                const SizedBox(width: 20.0), // Reduced spacing
+                const SizedBox(width: 20.0), 
                 _buildSocialIcon('assets/images/facebook_icon.png'),
               ],
             ),
@@ -408,7 +408,7 @@ class _WelcomePageState extends State<WelcomePage> {
         ),
         child: Image.asset(
           assetPath,
-          height: 32, // Slightly smaller icon size
+          height: 32, 
           width: 32,
         ),
       ),
